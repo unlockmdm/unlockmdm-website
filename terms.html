@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - UnlockMDM</title>
+    <meta name="description" content="UnlockMDM Terms of Service. Read our terms and conditions for MDM bypass services.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://unlockmdm.com/terms.html">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <meta name="theme-color" content="#007AFF">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #ffffff;
+            --bg-secondary: #f5f5f7;
+            --bg-card: #ffffff;
+            --text-primary: #1d1d1f;
+            --text-secondary: #86868b;
+            --text-tertiary: #6e6e73;
+            --accent: #007AFF;
+            --accent-hover: #0056b3;
+            --border: #d2d2d7;
+            --border-light: #e8e8ed;
+            --success: #34c759;
+            --shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 16px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: calc(100% - 48px);
+            max-width: 1200px;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+        }
+
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 72px;
+            padding: 0 28px;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: opacity 0.2s;
+            letter-spacing: -0.02em;
+        }
+
+        .logo:hover {
+            opacity: 0.8;
+        }
+
+        .logo-icon {
+            height: 40px;
+            width: auto;
+        }
+
+        .logo span {
+            font-weight: 700;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            transition: color 0.2s;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--text-primary);
+        }
+
+        .nav-divider {
+            width: 1px;
+            height: 14px;
+            background: var(--border);
+            margin: 0 8px;
+            align-self: center;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 180px 0 80px;
+            background: var(--bg-secondary);
+        }
+
+        .hero-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-tertiary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .last-updated {
+            display: inline-block;
+            margin-top: 24px;
+            padding: 8px 16px;
+            background: white;
+            border-radius: 8px;
+            font-size: 14px;
+            color: var(--text-tertiary);
+            border: 1px solid var(--border-light);
+        }
+
+        /* Content Section */
+        .content-section {
+            padding: 80px 0;
+        }
+
+        .content-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .section-block {
+            margin-bottom: 48px;
+        }
+
+        .section-block h2 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .section-block h2::before {
+            content: '';
+            width: 4px;
+            height: 28px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+
+        .section-block h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 24px 0 12px;
+            color: var(--text-primary);
+        }
+
+        .section-block p {
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            font-size: 16px;
+        }
+
+        .section-block ul {
+            margin: 16px 0 24px 24px;
+            color: var(--text-secondary);
+        }
+
+        .section-block li {
+            margin-bottom: 12px;
+            padding-left: 8px;
+        }
+
+        .highlight-box {
+            background: var(--bg-secondary);
+            border-left: 4px solid var(--accent);
+            padding: 24px;
+            border-radius: 0 12px 12px 0;
+            margin: 24px 0;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        .warning-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 24px;
+            border-radius: 0 12px 12px 0;
+            margin: 24px 0;
+        }
+
+        .warning-box p {
+            margin: 0;
+            color: #856404;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-secondary);
+            padding: 60px 0 30px;
+            border-top: 1px solid var(--border-light);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr repeat(3, 1fr);
+            gap: 60px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand {
+            max-width: 280px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 16px;
+            text-decoration: none;
+        }
+
+        .footer-logo img {
+            height: 36px;
+            width: auto;
+        }
+
+        .footer-logo span {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .footer-brand p {
+            color: var(--text-secondary);
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .footer-column h4 {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column li {
+            margin-bottom: 10px;
+        }
+
+        .footer-column a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .footer-column a:hover {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            padding-top: 30px;
+            border-top: 1px solid var(--border-light);
+            text-align: center;
+        }
+
+        .footer-copy {
+            color: var(--text-tertiary);
+            font-size: 13px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero h1 { font-size: 36px; }
+            .hero p { font-size: 18px; }
+            .footer-content { grid-template-columns: 1fr; gap: 40px; }
+            .section-block h2 { font-size: 24px; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-inner">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="UnlockMDM" class="logo-icon">
+                <span>UnlockMDM</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="iphone.html">iPhone Bypass</a></li>
+                <li><a href="ipad.html">iPad Bypass</a></li>
+                <li><a href="mac.html">Mac Bypass</a></li>
+                <li class="nav-divider"></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Terms of Service</h1>
+                <p>Please read these terms carefully before using UnlockMDM services.</p>
+                <span class="last-updated">Last Updated: January 1, 2026</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="content-wrapper">
+                
+                <div class="section-block">
+                    <h2>Agreement to Terms</h2>
+                    <p>By accessing or using the UnlockMDM website, software, and services (collectively, "Services"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, you may not access or use the Services.</p>
+                    <p>These Terms constitute a legally binding agreement between you and UnlockMDM ("Company," "we," "us," or "our"). By using our Services, you represent that you are at least 18 years of age and have the legal capacity to enter into these Terms.</p>
+                </div>
+
+                <div class="section-block">
+                    <h2>Description of Services</h2>
+                    <p>UnlockMDM provides software tools designed to remove Mobile Device Management (MDM) profiles from Apple devices, including iPhones, iPads, and Mac computers. Our Services are intended for:</p>
+                    <ul>
+                        <li>Removing MDM profiles from devices you legally own</li>
+                        <li>Removing MDM profiles from devices you have explicit authorization to modify</li>
+                        <li>Restoring full functionality to personally owned devices</li>
+                    </ul>
+                    <div class="warning-box">
+                        <p><strong>Important:</strong> Our Services are NOT intended for removing MDM profiles from stolen devices, leased devices without authorization, or devices you do not have legal rights to modify.</p>
+                    </div>
+                </div>
+
+                <div class="section-block">
+                    <h2>Intended Use</h2>
+                    <p>The UnlockMDM software and services are intended solely for lawful purposes. By using our Services, you agree that you:</p>
+                    <ul>
+                        <li>Are the legal owner of the device, or have obtained explicit written authorization from the owner to remove MDM profiles</li>
+                        <li>Will not use the Services to circumvent security measures on stolen, lost, or unauthorized devices</li>
+                        <li>Will not use the Services to violate any applicable local, state, national, or international laws</li>
+                        <li>Accept full responsibility for ensuring your use of the Services complies with all applicable laws and regulations</li>
+                    </ul>
+                </div>
+
+                <div class="section-block">
+                    <h2>Disclaimer of Warranties</h2>
+                    <p>THE SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:</p>
+                    <ul>
+                        <li>Implied warranties of merchantability</li>
+                        <li>Fitness for a particular purpose</li>
+                        <li>Non-infringement</li>
+                        <li>Accuracy, reliability, or completeness of content</li>
+                    </ul>
+                    <p>We do not warrant that the Services will be uninterrupted, error-free, or secure. We do not guarantee that any defects will be corrected or that our servers are free of viruses or other harmful components.</p>
+                </div>
+
+                <div class="section-block">
+                    <h2>Limitation of Liability</h2>
+                    <div class="highlight-box">
+                        <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, UNLOCKMDM AND ITS AFFILIATES, OFFICERS, DIRECTORS, EMPLOYEES, AND AGENTS SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING OUT OF OR RELATED TO YOUR USE OF THE SERVICES.</p>
+                    </div>
+                    <p>This includes, but is not limited to:</p>
+                    <ul>
+                        <li><strong>Data Loss:</strong> We are not responsible for any data loss, corruption, or damage to your device resulting from the use of our Services</li>
+                        <li><strong>Device Damage:</strong> We are not liable for any hardware damage, software issues, or bricking of devices</li>
+                        <li><strong>Legal Consequences:</strong> We are not responsible for any legal consequences resulting from unauthorized use of our Services</li>
+                        <li><strong>Business Losses:</strong> We are not liable for any lost profits, business interruption, or commercial damages</li>
+                        <li><strong>Third-Party Claims:</strong> We are not responsible for any claims made by third parties, including employers, educational institutions, or device management providers</li>
+                    </ul>
+                    <p>In no event shall our total liability exceed the amount you paid for the Services in the twelve (12) months preceding the claim.</p>
+                </div>
+
+                <div class="section-block">
+                    <h2>User Responsibilities</h2>
+                    <p>You acknowledge and agree that:</p>
+                    <ul>
+                        <li>You are solely responsible for backing up your device data before using our Services</li>
+                        <li>You understand the risks associated with removing MDM profiles and accept full responsibility for any outcomes</li>
+                        <li>You will not hold UnlockMDM liable for any issues arising from the use of our Services</li>
+                        <li>You are responsible for verifying your legal right to modify the device</li>
+                        <li>You will not reverse engineer, decompile, or disassemble our software</li>
+                    </ul>
+                </div>
+
+                <div class="section-block">
+                    <h2>Payment and Refunds</h2>
+                    <p>By purchasing our Services, you agree to the following:</p>
+                    <ul>
+                        <li>All fees are non-refundable unless otherwise stated</li>
+                        <li>Prices are subject to change without notice</li>
+                        <li>You are responsible for any applicable taxes</li>
+                        <li>Registration is tied to your device serial number and is non-transferable</li>
+                    </ul>
+                    <p>Re-bypass services are provided free of charge for registered devices that require MDM removal after a factory reset.</p>
+                </div>
+
+                <div class="section-block">
+                    <h2>Intellectual Property</h2>
+                    <p>All content, features, and functionality of the Services, including but not limited to text, graphics, logos, icons, images, software, and code, are the exclusive property of UnlockMDM and are protected by copyright, trademark, and other intellectual property laws.</p>
+                    <p>You may not reproduce, distribute, modify, or create derivative works from any content without our express written permission.</p>
+                </div>
+
+                <div class="section-block">
+                    <h2>Indemnification</h2>
+                    <p>You agree to indemnify, defend, and hold harmless UnlockMDM and its affiliates, officers, directors, employees, and agents from and against any and all claims, damages, obligations, losses, liabilities, costs, and expenses arising from:</p>
+                    <ul>
+                        <li>Your use of the Services</li>
+                        <li>Your violation of these Terms</li>
+                        <li>Your violation of any third-party rights</li>
+                        <li>Any claim that your use of the Services caused damage to a third party</li>
+                    </ul>
+                </div>
+
+                <div class="section-block">
+                    <h2>Modifications to Terms</h2>
+                    <p>We reserve the right to modify these Terms at any time. Changes will be effective immediately upon posting to our website. Your continued use of the Services after any changes constitutes acceptance of the modified Terms.</p>
+                </div>
+
+                <div class="section-block">
+                    <h2>Governing Law</h2>
+                    <p>These Terms shall be governed by and construed in accordance with applicable laws, without regard to conflict of law principles. Any disputes arising under these Terms shall be resolved through binding arbitration.</p>
+                </div>
+
+                <div class="section-block">
+                    <h2>Contact Information</h2>
+                    <p>If you have any questions about these Terms of Service, please contact us:</p>
+                    <ul>
+                        <li>Email: <a href="mailto:support@unlockmdm.com" style="color: var(--accent);">support@unlockmdm.com</a></li>
+                        <li>Website: <a href="support.html" style="color: var(--accent);">UnlockMDM Support</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <img src="assets/logo.png" alt="UnlockMDM">
+                        <span>UnlockMDM</span>
+                    </a>
+                    <p>Professional MDM bypass solutions for iPhone, iPad, and Mac devices. Simple, fast, and reliable.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="iphone.html">iPhone Bypass</a></li>
+                        <li><a href="ipad.html">iPad Bypass</a></li>
+                        <li><a href="mac.html">Mac Bypass</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                        <li><a href="support.html">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copy">© 2026 UnlockMDM. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            window.scrollTo(0, 0);
+        });
+    </script>
+</body>
+</html>
+

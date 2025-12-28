@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Support & Contact - UnlockMDM Help Center</title>
+    <meta name="title" content="Support & Contact - UnlockMDM Help Center">
+    <meta name="description" content="Get help with MDM bypass and Remote Management removal. Contact UnlockMDM support via email or WhatsApp. 24/7 customer support for iPhone, iPad & Mac MDM issues.">
+    <meta name="keywords" content="UnlockMDM support, MDM bypass help, MDM removal support, contact UnlockMDM, MDM bypass customer service">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://unlockmdm.com/support.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://unlockmdm.com/support.html">
+    <meta property="og:title" content="Support & Contact - UnlockMDM Help Center">
+    <meta property="og:description" content="Get help with MDM bypass. Contact our 24/7 support team.">
+    
+    <!-- Preconnect & Favicon -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <meta name="theme-color" content="#007AFF">
+    
+    <!-- Structured Data - Contact Page -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "UnlockMDM Support",
+        "description": "Contact UnlockMDM for help with MDM bypass and Remote Management removal",
+        "url": "https://unlockmdm.com/support.html",
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "UnlockMDM",
+            "email": "support@unlockmdm.com"
+        }
+    }
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #ffffff;
+            --bg-secondary: #f5f5f7;
+            --bg-card: #ffffff;
+            --text-primary: #1d1d1f;
+            --text-secondary: #86868b;
+            --text-tertiary: #6e6e73;
+            --accent: #007AFF;
+            --accent-hover: #0056b3;
+            --border: #d2d2d7;
+            --border-light: #e8e8ed;
+            --success: #34c759;
+            --shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+        /* Navigation - Matches Homepage */
+        nav {
+            position: fixed;
+            top: 16px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: calc(100% - 48px);
+            max-width: 1200px;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+        }
+
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 72px;
+            padding: 0 28px;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: opacity 0.2s;
+            letter-spacing: -0.02em;
+        }
+
+        .logo:hover { opacity: 0.8; }
+        .logo-icon { height: 40px; width: auto; }
+        .logo span { font-weight: 700; }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            transition: color 0.2s;
+            position: relative;
+        }
+
+        .nav-links a:hover, .nav-links a.active { color: var(--accent); }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            border-radius: 1px;
+            transition: width 0.2s ease;
+        }
+
+        .nav-links a:hover::after { width: 100%; }
+
+        .nav-divider {
+            width: 1px;
+            height: 14px;
+            background: var(--border);
+            margin: 0 8px;
+            align-self: center;
+        }
+
+        /* Language Selector */
+        .lang-selector {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 16px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+
+        .lang-selector:hover {
+            background: var(--bg);
+            border-color: var(--border);
+            box-shadow: var(--shadow);
+        }
+
+        .lang-flag {
+            width: 20px;
+            height: 14px;
+            border-radius: 2px;
+            overflow: hidden;
+            flex-shrink: 0;
+            box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+        }
+
+        .lang-selector span { font-weight: 600; letter-spacing: 0.02em; }
+
+        .lang-selector .chevron {
+            width: 14px;
+            height: 14px;
+            stroke: var(--text-secondary);
+            stroke-width: 2;
+            fill: none;
+            transition: transform 0.2s;
+            margin-left: 2px;
+        }
+
+        .lang-dropdown {
+            position: absolute;
+            top: calc(100% + 8px);
+            right: 0;
+            background: white;
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+            box-shadow: var(--shadow-lg);
+            min-width: 180px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-8px);
+            transition: all 0.2s;
+            z-index: 200;
+            overflow: hidden;
+        }
+
+        .lang-selector:hover .lang-dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .lang-option {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-primary);
+            cursor: pointer;
+            transition: background 0.15s;
+        }
+
+        .lang-option:hover { background: var(--bg-secondary); }
+        .lang-option.active { background: rgba(0, 122, 255, 0.08); color: var(--accent); }
+
+        .lang-option .check {
+            margin-left: auto;
+            width: 16px;
+            height: 16px;
+            stroke: var(--accent);
+            opacity: 0;
+        }
+
+        .lang-option.active .check { opacity: 1; }
+
+        /* Hero Section */
+        .hero {
+            padding: 160px 0 60px;
+            background: var(--bg-secondary);
+        }
+
+        .hero-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 60px;
+        }
+
+        .hero-content { max-width: 600px; }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(52, 199, 89, 0.1);
+            color: var(--success);
+            padding: 8px 16px;
+            border-radius: 100px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+            line-height: 1.1;
+        }
+
+        .hero-desc {
+            font-size: 18px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .hero-icon {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(135deg, var(--success) 0%, #30d158 100%);
+            border-radius: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 20px 60px rgba(52, 199, 89, 0.3);
+        }
+
+        .hero-icon svg {
+            width: 100px;
+            height: 100px;
+            stroke: white;
+            stroke-width: 1.5;
+            fill: none;
+        }
+
+        /* Contact Options */
+        .contact-section {
+            padding: 80px 0;
+            background: var(--bg);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .contact-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: 20px;
+            padding: 40px 32px;
+            text-align: center;
+            transition: all 0.3s;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--accent);
+        }
+
+        .contact-icon {
+            width: 72px;
+            height: 72px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+
+        .contact-icon.email { background: linear-gradient(135deg, var(--accent) 0%, #5AC8FA 100%); }
+        .contact-icon.whatsapp { background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); }
+        .contact-icon.form { background: linear-gradient(135deg, #af52de 0%, #bf5af2 100%); }
+
+        .contact-icon svg {
+            width: 32px;
+            height: 32px;
+            stroke: white;
+            stroke-width: 2;
+            fill: none;
+        }
+
+        .contact-icon.whatsapp svg { fill: white; stroke: none; }
+
+        .contact-card h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .contact-card p {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            line-height: 1.5;
+        }
+
+        .contact-link {
+            color: var(--accent);
+            font-weight: 500;
+            font-size: 15px;
+        }
+
+        /* Form Section */
+        .form-section {
+            padding: 80px 0;
+            background: var(--bg-secondary);
+        }
+
+        .form-container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .form-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .form-header h2 {
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .form-header p {
+            font-size: 17px;
+            color: var(--text-secondary);
+        }
+
+        .contact-form {
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: 20px;
+            padding: 40px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            font-size: 15px;
+            font-family: inherit;
+            outline: none;
+            transition: border-color 0.2s;
+            background: var(--bg-secondary);
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--accent);
+            background: var(--bg);
+        }
+
+        .form-group textarea {
+            min-height: 140px;
+            resize: vertical;
+        }
+
+        .form-group select {
+            cursor: pointer;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.5 4.5L6 8L9.5 4.5' stroke='%2386868b' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 16px center;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            background: var(--text-primary);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .submit-btn:hover { background: #424245; }
+
+        .success-message {
+            display: none;
+            background: rgba(52, 199, 89, 0.1);
+            border: 1px solid var(--success);
+            color: var(--success);
+            padding: 16px;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .success-message.show { display: block; }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 80px 0;
+            background: var(--bg);
+        }
+
+        .faq-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .faq-header h2 {
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .faq-header p {
+            font-size: 17px;
+            color: var(--text-secondary);
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 24px;
+        }
+
+        .faq-item h4 {
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .faq-item p {
+            font-size: 15px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Response Info */
+        .response-section {
+            padding: 60px 0;
+            background: var(--bg-secondary);
+        }
+
+        .response-inner {
+            display: flex;
+            justify-content: center;
+            gap: 48px;
+        }
+
+        .response-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            background: var(--bg);
+            padding: 20px 32px;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+        }
+
+        .response-item svg {
+            width: 24px;
+            height: 24px;
+            stroke: var(--success);
+        }
+
+        .response-item span {
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        /* Footer */
+        footer {
+            padding: 60px 0 30px;
+            background: #1d1d1f;
+            color: white;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 48px;
+            margin-bottom: 48px;
+        }
+
+        .footer-brand p {
+            font-size: 14px;
+            color: #86868b;
+            line-height: 1.6;
+            margin-top: 16px;
+        }
+
+        .footer-column h4 {
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 20px;
+            color: #86868b;
+        }
+
+        .footer-column ul { list-style: none; }
+        .footer-column li { margin-bottom: 12px; }
+
+        .footer-column a {
+            font-size: 14px;
+            color: #f5f5f7;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-column a:hover { color: var(--accent); }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: center;
+            padding-top: 24px;
+            border-top: 1px solid #424245;
+        }
+
+        .footer-copy {
+            font-size: 12px;
+            color: #86868b;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+        }
+
+        .footer-logo img {
+            height: 32px;
+            filter: brightness(0) invert(1);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-inner { flex-direction: column; text-align: center; }
+            .hero-icon { display: none; }
+            .contact-grid { grid-template-columns: 1fr; }
+            .faq-grid { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero h1 { font-size: 36px; }
+            .form-row { grid-template-columns: 1fr; }
+            .response-inner { flex-direction: column; align-items: center; }
+            .footer-grid { grid-template-columns: 1fr; gap: 32px; text-align: center; }
+            .footer-logo { justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container nav-inner">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="" class="logo-icon" onerror="this.style.display='none'">
+                <span>UnlockMDM</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="iphone.html" data-i18n="nav.iphone">iPhone Bypass</a></li>
+                <li><a href="ipad.html" data-i18n="nav.ipad">iPad Bypass</a></li>
+                <li><a href="mac.html" data-i18n="nav.mac">Mac Bypass</a></li>
+                <li class="nav-divider"></li>
+                <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
+                <li><a href="support.html" class="active" data-i18n="nav.support">Support</a></li>
+            </ul>
+            <div class="lang-selector">
+                <div class="lang-flag">
+                    <svg viewBox="0 0 20 14" fill="none">
+                        <rect width="20" height="14" fill="#fff"/>
+                        <rect width="20" height="1.077" fill="#B22234"/>
+                        <rect y="2.154" width="20" height="1.077" fill="#B22234"/>
+                        <rect y="4.308" width="20" height="1.077" fill="#B22234"/>
+                        <rect y="6.462" width="20" height="1.077" fill="#B22234"/>
+                        <rect y="8.615" width="20" height="1.077" fill="#B22234"/>
+                        <rect y="10.769" width="20" height="1.077" fill="#B22234"/>
+                        <rect y="12.923" width="20" height="1.077" fill="#B22234"/>
+                        <rect width="8" height="7.538" fill="#3C3B6E"/>
+                    </svg>
+                </div>
+                <span id="langCode">EN</span>
+                <svg class="chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                <div class="lang-dropdown">
+                    <div class="lang-option active" data-lang="en">
+                        <div class="lang-flag"><svg viewBox="0 0 20 14" fill="none"><rect width="20" height="14" fill="#fff"/><rect width="20" height="1.077" fill="#B22234"/><rect y="2.154" width="20" height="1.077" fill="#B22234"/><rect y="4.308" width="20" height="1.077" fill="#B22234"/><rect y="6.462" width="20" height="1.077" fill="#B22234"/><rect y="8.615" width="20" height="1.077" fill="#B22234"/><rect y="10.769" width="20" height="1.077" fill="#B22234"/><rect y="12.923" width="20" height="1.077" fill="#B22234"/><rect width="8" height="7.538" fill="#3C3B6E"/></svg></div>
+                        English
+                        <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                    </div>
+                    <div class="lang-option" data-lang="fr">
+                        <div class="lang-flag"><svg viewBox="0 0 20 14" fill="none"><rect width="6.67" height="14" fill="#002395"/><rect x="6.67" width="6.67" height="14" fill="#fff"/><rect x="13.33" width="6.67" height="14" fill="#ED2939"/></svg></div>
+                        Français
+                        <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                    </div>
+                    <div class="lang-option" data-lang="de">
+                        <div class="lang-flag"><svg viewBox="0 0 20 14" fill="none"><rect width="20" height="4.67" fill="#000"/><rect y="4.67" width="20" height="4.67" fill="#DD0000"/><rect y="9.33" width="20" height="4.67" fill="#FFCE00"/></svg></div>
+                        Deutsch
+                        <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                    </div>
+                    <div class="lang-option" data-lang="es">
+                        <div class="lang-flag"><svg viewBox="0 0 20 14" fill="none"><rect width="20" height="14" fill="#AA151B"/><rect y="2.8" width="20" height="8.4" fill="#F1BF00"/></svg></div>
+                        Español
+                        <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-inner">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                        <span data-i18n="support.badge">Available 24/7</span>
+                    </div>
+                    <h1 data-i18n="support.title">Get Help & Support</h1>
+                    <p class="hero-desc" data-i18n="support.subtitle">Have questions or need assistance? Our support team is here to help you with MDM bypass, registration, and any technical issues.</p>
+                </div>
+                <div class="hero-icon">
+                    <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <a href="mailto:support@unlockmdm.com" class="contact-card">
+                    <div class="contact-icon email">
+                        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                    </div>
+                    <h3 data-i18n="support.email.title">Email Support</h3>
+                    <p data-i18n="support.email.desc">Send us an email and receive a response within 24 hours.</p>
+                    <span class="contact-link">support@unlockmdm.com →</span>
+                </a>
+                
+                <a href="https://wa.me/1234567890" target="_blank" class="contact-card">
+                    <div class="contact-icon whatsapp">
+                        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    </div>
+                    <h3 data-i18n="support.whatsapp.title">WhatsApp</h3>
+                    <p data-i18n="support.whatsapp.desc">Chat with us instantly on WhatsApp for quick support.</p>
+                    <span class="contact-link" data-i18n="support.whatsapp.link">Open WhatsApp →</span>
+                </a>
+                
+                <a href="#contact-form" class="contact-card">
+                    <div class="contact-icon form">
+                        <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+                    </div>
+                    <h3 data-i18n="support.form.title">Contact Form</h3>
+                    <p data-i18n="support.form.desc">Fill out the form below and describe your issue in detail.</p>
+                    <span class="contact-link" data-i18n="support.form.link">Go to Form →</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-section" id="contact-form">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2 data-i18n="support.formtitle">Send Us a Message</h2>
+                    <p data-i18n="support.formdesc">Describe your issue and we'll get back to you as soon as possible.</p>
+                </div>
+                
+                <div class="success-message" id="successMessage" data-i18n="support.success">
+                    Your message has been sent successfully! We'll respond within 24 hours.
+                </div>
+                
+                <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                    <!-- Web3Forms Access Key - Get yours free at https://web3forms.com -->
+                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                    <input type="hidden" name="subject" value="New Support Request from UnlockMDM">
+                    <input type="hidden" name="from_name" value="UnlockMDM Support">
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name" data-i18n="support.name">Full Name</label>
+                            <input type="text" name="name" id="name" required data-i18n-placeholder="support.namePlaceholder" placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-i18n="support.emailLabel">Email Address</label>
+                            <input type="email" name="email" id="email" required data-i18n-placeholder="support.emailPlaceholder" placeholder="john@example.com">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="device" data-i18n="support.device">Device Type</label>
+                        <select name="device" id="device" required>
+                            <option value="" data-i18n="support.selectDevice">Select your device</option>
+                            <option value="iPhone">iPhone</option>
+                            <option value="iPad">iPad</option>
+                            <option value="Mac">Mac</option>
+                            <option value="Other" data-i18n="support.deviceOther">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="issue_subject" data-i18n="support.subject">Subject</label>
+                        <input type="text" name="issue_subject" id="issue_subject" required data-i18n-placeholder="support.subjectPlaceholder" placeholder="Brief description of your issue">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" data-i18n="support.message">Message</label>
+                        <textarea name="message" id="message" required data-i18n-placeholder="support.messagePlaceholder" placeholder="Please describe your issue in detail..."></textarea>
+                    </div>
+                    
+                    <!-- Honeypot Spam Protection -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    
+                    <button type="submit" class="submit-btn" data-i18n="support.submit">Send Message</button>
+                </form>
+                
+                <p style="text-align: center; margin-top: 20px; font-size: 13px; color: var(--text-secondary);">
+                    Messages are sent directly to our support inbox. Response within 24 hours.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <div class="faq-header">
+                <h2 data-i18n="support.faqTitle">Common Questions</h2>
+                <p data-i18n="support.faqDesc">Quick answers to frequently asked questions.</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4 data-i18n="support.faq1.q">How long does the bypass process take?</h4>
+                    <p data-i18n="support.faq1.a">The entire process typically takes 5-10 minutes once your device is connected and registered.</p>
+                </div>
+                <div class="faq-item">
+                    <h4 data-i18n="support.faq2.q">What if the bypass doesn't work?</h4>
+                    <p data-i18n="support.faq2.a">Contact our support team with your device details. We offer free re-bypass for registered devices.</p>
+                </div>
+                <div class="faq-item">
+                    <h4 data-i18n="support.faq3.q">Is the tool safe to use?</h4>
+                    <p data-i18n="support.faq3.a">Yes, the tool is completely safe. It only removes MDM profiles without accessing personal data.</p>
+                </div>
+                <div class="faq-item">
+                    <h4 data-i18n="support.faq4.q">Do you offer refunds?</h4>
+                    <p data-i18n="support.faq4.a">If the bypass cannot be completed, we offer a full refund within 7 days of purchase.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="response-section">
+        <div class="container">
+            <div class="response-inner">
+                <div class="response-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    <span data-i18n="support.responseTime">Response within 24 hours</span>
+                </div>
+                <div class="response-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                    <span data-i18n="support.available">Available 7 days a week</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="assets/logo.png" alt="" onerror="this.style.display='none'">
+                        <span>UnlockMDM</span>
+                    </div>
+                    <p data-i18n="footer.desc">Remove MDM and Remote Management profiles from iPhone, iPad, and Mac devices quickly and securely.</p>
+                </div>
+                <div class="footer-column">
+                    <h4 data-i18n="footer.services">Services</h4>
+                    <ul>
+                        <li><a href="iphone.html" data-i18n="nav.iphone">iPhone Bypass</a></li>
+                        <li><a href="ipad.html" data-i18n="nav.ipad">iPad Bypass</a></li>
+                        <li><a href="mac.html" data-i18n="nav.mac">Mac Bypass</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 data-i18n="footer.resources">Resources</h4>
+                    <ul>
+                        <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
+                        <li><a href="#faq" data-i18n="footer.faq">FAQ</a></li>
+                        <li><a href="support.html" data-i18n="nav.support">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 data-i18n="footer.legal">Legal</h4>
+                    <ul>
+                        <li><a href="terms.html" data-i18n="footer.terms">Terms of Service</a></li>
+                        <li><a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copy">© 2026 UnlockMDM. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        if (history.scrollRestoration) history.scrollRestoration = 'manual';
+        window.scrollTo(0, 0);
+
+        // Contact form is handled by Web3Forms - submissions go directly to email
+        // To set up: Go to https://web3forms.com, enter your email, get access key
+        // Replace YOUR_ACCESS_KEY_HERE in the form with your actual key
+
+        const translations = {
+            en: {
+                'nav.iphone': 'iPhone Bypass',
+                'nav.ipad': 'iPad Bypass',
+                'nav.mac': 'Mac Bypass',
+                'nav.blog': 'Blog',
+                'nav.support': 'Support',
+                'support.badge': 'Available 24/7',
+                'support.title': 'Get Help & Support',
+                'support.subtitle': 'Have questions or need assistance? Our support team is here to help you with MDM bypass, registration, and any technical issues.',
+                'support.email.title': 'Email Support',
+                'support.email.desc': 'Send us an email and receive a response within 24 hours.',
+                'support.whatsapp.title': 'WhatsApp',
+                'support.whatsapp.desc': 'Chat with us instantly on WhatsApp for quick support.',
+                'support.whatsapp.link': 'Open WhatsApp →',
+                'support.form.title': 'Contact Form',
+                'support.form.desc': 'Fill out the form below and describe your issue in detail.',
+                'support.form.link': 'Go to Form →',
+                'support.formtitle': 'Send Us a Message',
+                'support.formdesc': 'Describe your issue and we\'ll get back to you as soon as possible.',
+                'support.success': 'Your message has been sent successfully! We\'ll respond within 24 hours.',
+                'support.name': 'Full Name',
+                'support.namePlaceholder': 'John Doe',
+                'support.emailLabel': 'Email Address',
+                'support.emailPlaceholder': 'john@example.com',
+                'support.device': 'Device Type',
+                'support.selectDevice': 'Select your device',
+                'support.deviceOther': 'Other',
+                'support.subject': 'Subject',
+                'support.subjectPlaceholder': 'Brief description of your issue',
+                'support.message': 'Message',
+                'support.messagePlaceholder': 'Please describe your issue in detail...',
+                'support.submit': 'Send Message',
+                'support.faqTitle': 'Common Questions',
+                'support.faqDesc': 'Quick answers to frequently asked questions.',
+                'support.faq1.q': 'How long does the bypass process take?',
+                'support.faq1.a': 'The entire process typically takes 5-10 minutes once your device is connected and registered.',
+                'support.faq2.q': 'What if the bypass doesn\'t work?',
+                'support.faq2.a': 'Contact our support team with your device details. We offer free re-bypass for registered devices.',
+                'support.faq3.q': 'Is the tool safe to use?',
+                'support.faq3.a': 'Yes, the tool is completely safe. It only removes MDM profiles without accessing personal data.',
+                'support.faq4.q': 'Do you offer refunds?',
+                'support.faq4.a': 'If the bypass cannot be completed, we offer a full refund within 7 days of purchase.',
+                'support.responseTime': 'Response within 24 hours',
+                'support.available': 'Available 7 days a week',
+                'footer.desc': 'Remove MDM and Remote Management profiles from iPhone, iPad, and Mac devices quickly and securely.',
+                'footer.services': 'Services',
+                'footer.resources': 'Resources',
+                'footer.faq': 'FAQ',
+                'footer.legal': 'Legal',
+                'footer.terms': 'Terms of Service',
+                'footer.privacy': 'Privacy Policy'
+            },
+            fr: {
+                'nav.iphone': 'Bypass iPhone',
+                'nav.ipad': 'Bypass iPad',
+                'nav.mac': 'Bypass Mac',
+                'nav.blog': 'Blog',
+                'nav.support': 'Support',
+                'support.badge': 'Disponible 24/7',
+                'support.title': 'Aide & Support',
+                'support.subtitle': 'Vous avez des questions ou besoin d\'aide? Notre équipe de support est là pour vous aider avec le bypass MDM, l\'inscription et tout problème technique.',
+                'support.email.title': 'Support par Email',
+                'support.email.desc': 'Envoyez-nous un email et recevez une réponse sous 24 heures.',
+                'support.whatsapp.title': 'WhatsApp',
+                'support.whatsapp.desc': 'Discutez avec nous instantanément sur WhatsApp.',
+                'support.whatsapp.link': 'Ouvrir WhatsApp →',
+                'support.form.title': 'Formulaire de Contact',
+                'support.form.desc': 'Remplissez le formulaire ci-dessous et décrivez votre problème.',
+                'support.form.link': 'Aller au Formulaire →',
+                'support.formtitle': 'Envoyez-nous un Message',
+                'support.formdesc': 'Décrivez votre problème et nous vous répondrons dès que possible.',
+                'support.success': 'Votre message a été envoyé avec succès! Nous répondrons sous 24 heures.',
+                'support.name': 'Nom Complet',
+                'support.namePlaceholder': 'Jean Dupont',
+                'support.emailLabel': 'Adresse Email',
+                'support.emailPlaceholder': 'jean@exemple.com',
+                'support.device': 'Type d\'Appareil',
+                'support.selectDevice': 'Sélectionnez votre appareil',
+                'support.deviceOther': 'Autre',
+                'support.subject': 'Sujet',
+                'support.subjectPlaceholder': 'Brève description de votre problème',
+                'support.message': 'Message',
+                'support.messagePlaceholder': 'Veuillez décrire votre problème en détail...',
+                'support.submit': 'Envoyer le Message',
+                'support.faqTitle': 'Questions Fréquentes',
+                'support.faqDesc': 'Réponses rapides aux questions courantes.',
+                'support.faq1.q': 'Combien de temps dure le processus?',
+                'support.faq1.a': 'Le processus prend généralement 5-10 minutes une fois votre appareil connecté et enregistré.',
+                'support.faq2.q': 'Que faire si le bypass ne fonctionne pas?',
+                'support.faq2.a': 'Contactez notre équipe avec les détails de votre appareil. Nous offrons un re-bypass gratuit.',
+                'support.faq3.q': 'L\'outil est-il sûr?',
+                'support.faq3.a': 'Oui, l\'outil est totalement sûr. Il ne supprime que les profils MDM sans accéder aux données personnelles.',
+                'support.faq4.q': 'Offrez-vous des remboursements?',
+                'support.faq4.a': 'Si le bypass ne peut pas être effectué, nous offrons un remboursement complet sous 7 jours.',
+                'support.responseTime': 'Réponse sous 24 heures',
+                'support.available': 'Disponible 7 jours sur 7',
+                'footer.desc': 'Supprimez les profils MDM des iPhone, iPad et Mac rapidement et en toute sécurité.',
+                'footer.services': 'Services',
+                'footer.resources': 'Ressources',
+                'footer.faq': 'FAQ',
+                'footer.legal': 'Légal',
+                'footer.terms': 'Conditions d\'Utilisation',
+                'footer.privacy': 'Politique de Confidentialité'
+            },
+            de: {
+                'nav.iphone': 'iPhone Bypass',
+                'nav.ipad': 'iPad Bypass',
+                'nav.mac': 'Mac Bypass',
+                'nav.blog': 'Blog',
+                'nav.support': 'Support',
+                'support.badge': '24/7 Verfügbar',
+                'support.title': 'Hilfe & Support',
+                'support.subtitle': 'Haben Sie Fragen oder benötigen Hilfe? Unser Support-Team hilft Ihnen bei MDM-Bypass, Registrierung und technischen Problemen.',
+                'support.email.title': 'E-Mail-Support',
+                'support.email.desc': 'Senden Sie uns eine E-Mail und erhalten Sie innerhalb von 24 Stunden eine Antwort.',
+                'support.whatsapp.title': 'WhatsApp',
+                'support.whatsapp.desc': 'Chatten Sie sofort mit uns auf WhatsApp.',
+                'support.whatsapp.link': 'WhatsApp Öffnen →',
+                'support.form.title': 'Kontaktformular',
+                'support.form.desc': 'Füllen Sie das Formular aus und beschreiben Sie Ihr Problem.',
+                'support.form.link': 'Zum Formular →',
+                'support.formtitle': 'Nachricht Senden',
+                'support.formdesc': 'Beschreiben Sie Ihr Problem und wir werden uns so schnell wie möglich melden.',
+                'support.success': 'Ihre Nachricht wurde erfolgreich gesendet! Wir antworten innerhalb von 24 Stunden.',
+                'support.name': 'Vollständiger Name',
+                'support.namePlaceholder': 'Max Mustermann',
+                'support.emailLabel': 'E-Mail-Adresse',
+                'support.emailPlaceholder': 'max@beispiel.de',
+                'support.device': 'Gerätetyp',
+                'support.selectDevice': 'Wählen Sie Ihr Gerät',
+                'support.deviceOther': 'Andere',
+                'support.subject': 'Betreff',
+                'support.subjectPlaceholder': 'Kurze Beschreibung Ihres Problems',
+                'support.message': 'Nachricht',
+                'support.messagePlaceholder': 'Bitte beschreiben Sie Ihr Problem detailliert...',
+                'support.submit': 'Nachricht Senden',
+                'support.faqTitle': 'Häufige Fragen',
+                'support.faqDesc': 'Schnelle Antworten auf häufig gestellte Fragen.',
+                'support.faq1.q': 'Wie lange dauert der Bypass-Prozess?',
+                'support.faq1.a': 'Der Prozess dauert in der Regel 5-10 Minuten, sobald Ihr Gerät verbunden und registriert ist.',
+                'support.faq2.q': 'Was wenn der Bypass nicht funktioniert?',
+                'support.faq2.a': 'Kontaktieren Sie unser Team mit Ihren Gerätedetails. Wir bieten kostenlosen erneuten Bypass.',
+                'support.faq3.q': 'Ist das Tool sicher?',
+                'support.faq3.a': 'Ja, das Tool ist völlig sicher. Es entfernt nur MDM-Profile ohne auf persönliche Daten zuzugreifen.',
+                'support.faq4.q': 'Bieten Sie Rückerstattungen an?',
+                'support.faq4.a': 'Wenn der Bypass nicht abgeschlossen werden kann, bieten wir innerhalb von 7 Tagen eine vollständige Rückerstattung.',
+                'support.responseTime': 'Antwort innerhalb von 24 Stunden',
+                'support.available': '7 Tage die Woche verfügbar',
+                'footer.desc': 'Entfernen Sie MDM-Profile von iPhone, iPad und Mac schnell und sicher.',
+                'footer.services': 'Dienste',
+                'footer.resources': 'Ressourcen',
+                'footer.faq': 'FAQ',
+                'footer.legal': 'Rechtliches',
+                'footer.terms': 'Nutzungsbedingungen',
+                'footer.privacy': 'Datenschutzrichtlinie'
+            },
+            es: {
+                'nav.iphone': 'Bypass iPhone',
+                'nav.ipad': 'Bypass iPad',
+                'nav.mac': 'Bypass Mac',
+                'nav.blog': 'Blog',
+                'nav.support': 'Soporte',
+                'support.badge': 'Disponible 24/7',
+                'support.title': 'Ayuda y Soporte',
+                'support.subtitle': '¿Tienes preguntas o necesitas ayuda? Nuestro equipo de soporte está aquí para ayudarte con el bypass MDM, registro y cualquier problema técnico.',
+                'support.email.title': 'Soporte por Email',
+                'support.email.desc': 'Envíanos un email y recibe respuesta en 24 horas.',
+                'support.whatsapp.title': 'WhatsApp',
+                'support.whatsapp.desc': 'Chatea con nosotros instantáneamente en WhatsApp.',
+                'support.whatsapp.link': 'Abrir WhatsApp →',
+                'support.form.title': 'Formulario de Contacto',
+                'support.form.desc': 'Completa el formulario y describe tu problema.',
+                'support.form.link': 'Ir al Formulario →',
+                'support.formtitle': 'Envíanos un Mensaje',
+                'support.formdesc': 'Describe tu problema y te responderemos lo antes posible.',
+                'support.success': '¡Tu mensaje se ha enviado con éxito! Responderemos en 24 horas.',
+                'support.name': 'Nombre Completo',
+                'support.namePlaceholder': 'Juan García',
+                'support.emailLabel': 'Correo Electrónico',
+                'support.emailPlaceholder': 'juan@ejemplo.com',
+                'support.device': 'Tipo de Dispositivo',
+                'support.selectDevice': 'Selecciona tu dispositivo',
+                'support.deviceOther': 'Otro',
+                'support.subject': 'Asunto',
+                'support.subjectPlaceholder': 'Breve descripción de tu problema',
+                'support.message': 'Mensaje',
+                'support.messagePlaceholder': 'Por favor describe tu problema en detalle...',
+                'support.submit': 'Enviar Mensaje',
+                'support.faqTitle': 'Preguntas Frecuentes',
+                'support.faqDesc': 'Respuestas rápidas a preguntas comunes.',
+                'support.faq1.q': '¿Cuánto tiempo toma el proceso de bypass?',
+                'support.faq1.a': 'El proceso toma generalmente 5-10 minutos una vez que tu dispositivo está conectado y registrado.',
+                'support.faq2.q': '¿Qué pasa si el bypass no funciona?',
+                'support.faq2.a': 'Contacta a nuestro equipo con los detalles de tu dispositivo. Ofrecemos bypass gratuito nuevamente.',
+                'support.faq3.q': '¿Es seguro usar la herramienta?',
+                'support.faq3.a': 'Sí, la herramienta es completamente segura. Solo elimina perfiles MDM sin acceder a datos personales.',
+                'support.faq4.q': '¿Ofrecen reembolsos?',
+                'support.faq4.a': 'Si el bypass no puede completarse, ofrecemos reembolso completo dentro de 7 días.',
+                'support.responseTime': 'Respuesta en 24 horas',
+                'support.available': 'Disponible 7 días a la semana',
+                'footer.desc': 'Elimina perfiles MDM de iPhone, iPad y Mac de forma rápida y segura.',
+                'footer.services': 'Servicios',
+                'footer.resources': 'Recursos',
+                'footer.faq': 'FAQ',
+                'footer.legal': 'Legal',
+                'footer.terms': 'Términos de Servicio',
+                'footer.privacy': 'Política de Privacidad'
+            }
+        };
+
+        const langCodes = { en: 'EN', fr: 'FR', de: 'DE', es: 'ES' };
+        const langOptions = document.querySelectorAll('.lang-option');
+
+        langOptions.forEach(option => {
+            option.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const lang = this.dataset.lang;
+                langOptions.forEach(opt => opt.classList.remove('active'));
+                this.classList.add('active');
+                document.getElementById('langCode').textContent = langCodes[lang];
+                document.querySelector('.lang-selector .lang-flag').innerHTML = this.querySelector('.lang-flag').innerHTML;
+                applyTranslations(lang);
+                localStorage.setItem('preferredLanguage', lang);
+            });
+        });
+
+        function applyTranslations(lang) {
+            const t = translations[lang] || translations.en;
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (t[key]) el.innerHTML = t[key];
+            });
+            document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+                const key = el.getAttribute('data-i18n-placeholder');
+                if (t[key]) el.placeholder = t[key];
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+            if (savedLang !== 'en') {
+                const option = document.querySelector(`.lang-option[data-lang="${savedLang}"]`);
+                if (option) option.click();
+            }
+        });
+    </script>
+</body>
+</html>

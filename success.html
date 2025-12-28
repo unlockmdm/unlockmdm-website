@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Successful - UnlockMDM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            min-height: 100vh;
+            background: #ffffff;
+            color: #1a1a1a;
+        }
+
+        /* Subtle gradient background */
+        .bg-gradient {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(ellipse at 20% 20%, rgba(34, 197, 94, 0.06) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 80%, rgba(59, 130, 246, 0.04) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        /* Nav */
+        nav {
+            position: relative;
+            padding: 20px 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+            z-index: 10;
+            background: #fff;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .logo img { height: 28px; }
+        .logo span { font-size: 18px; font-weight: 700; color: #1a1a1a; }
+
+        /* Main */
+        main {
+            position: relative;
+            min-height: calc(100vh - 70px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 24px;
+            z-index: 10;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+        }
+
+        /* Success Card */
+        .success-card {
+            background: #fff;
+            border: 1px solid rgba(0,0,0,0.08);
+            border-radius: 24px;
+            padding: 48px 40px;
+            text-align: center;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+        }
+
+        /* Animated Checkmark */
+        .checkmark-container {
+            width: 88px;
+            height: 88px;
+            margin: 0 auto 32px;
+            position: relative;
+        }
+
+        .checkmark-circle {
+            width: 88px;
+            height: 88px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: scaleIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 8px 32px rgba(34, 197, 94, 0.3);
+        }
+
+        .checkmark-circle svg {
+            width: 40px;
+            height: 40px;
+            stroke: white;
+            stroke-width: 3;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .checkmark-circle svg path {
+            stroke-dasharray: 50;
+            stroke-dashoffset: 50;
+            animation: drawCheck 0.4s ease-out 0.3s forwards;
+        }
+
+        @keyframes scaleIn {
+            from { transform: scale(0); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes drawCheck {
+            to { stroke-dashoffset: 0; }
+        }
+
+        .success-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+            animation: fadeUp 0.5s ease-out 0.2s backwards;
+        }
+
+        .success-subtitle {
+            font-size: 15px;
+            color: #6b7280;
+            margin-bottom: 36px;
+            animation: fadeUp 0.5s ease-out 0.3s backwards;
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Order Info */
+        .order-info {
+            background: #f9fafb;
+            border: 1px solid rgba(0,0,0,0.06);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 28px;
+            animation: fadeUp 0.5s ease-out 0.4s backwards;
+        }
+
+        .order-row {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .order-icon {
+            width: 52px;
+            height: 52px;
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .order-icon svg {
+            width: 26px;
+            height: 26px;
+            stroke: white;
+            fill: none;
+        }
+
+        .order-details {
+            flex: 1;
+            text-align: left;
+        }
+
+        .order-product {
+            font-size: 15px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 4px;
+        }
+
+        .order-serial {
+            font-size: 12px;
+            color: #9ca3af;
+            font-family: 'SF Mono', 'Menlo', 'Monaco', monospace;
+            letter-spacing: 0.5px;
+        }
+
+        .order-price {
+            font-size: 20px;
+            font-weight: 700;
+            color: #22c55e;
+        }
+
+        /* Divider */
+        .divider {
+            height: 1px;
+            background: rgba(0,0,0,0.06);
+            margin: 24px 0;
+        }
+
+        /* Next Steps */
+        .steps-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: #9ca3af;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            animation: fadeUp 0.5s ease-out 0.5s backwards;
+        }
+
+        .steps-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            animation: fadeUp 0.5s ease-out 0.6s backwards;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            text-align: left;
+        }
+
+        .step-num {
+            width: 32px;
+            height: 32px;
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            font-weight: 700;
+            color: #3b82f6;
+            flex-shrink: 0;
+        }
+
+        .step-text {
+            font-size: 14px;
+            color: #6b7280;
+            line-height: 1.4;
+        }
+
+        .step-text strong {
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        .card-footer {
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(0,0,0,0.06);
+            animation: fadeUp 0.5s ease-out 0.7s backwards;
+        }
+
+        .confirmation-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.2);
+            padding: 10px 16px;
+            border-radius: 100px;
+            font-size: 13px;
+            font-weight: 500;
+            color: #16a34a;
+        }
+
+        .confirmation-badge svg {
+            width: 16px;
+            height: 16px;
+            stroke: #16a34a;
+        }
+
+        .order-id {
+            margin-top: 12px;
+            font-size: 12px;
+            color: #9ca3af;
+            font-family: 'SF Mono', 'Menlo', monospace;
+        }
+
+        /* Loading State */
+        .loading-state {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .loading-spinner {
+            width: 48px;
+            height: 48px;
+            border: 3px solid rgba(0,0,0,0.08);
+            border-top-color: #3b82f6;
+            border-radius: 50%;
+            margin: 0 auto 24px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .loading-text {
+            font-size: 15px;
+            color: #6b7280;
+        }
+
+        /* Error State */
+        .error-state {
+            display: none;
+            text-align: center;
+        }
+
+        .error-icon {
+            width: 72px;
+            height: 72px;
+            background: rgba(239, 68, 68, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+        }
+
+        .error-icon svg {
+            width: 32px;
+            height: 32px;
+            stroke: #ef4444;
+        }
+
+        .error-title {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+        }
+
+        .error-message {
+            font-size: 14px;
+            color: #6b7280;
+            margin-bottom: 24px;
+        }
+
+        .retry-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 28px;
+            font-size: 15px;
+            font-weight: 600;
+            color: white;
+            background: #3b82f6;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .retry-btn:hover {
+            background: #2563eb;
+            transform: translateY(-1px);
+        }
+
+        /* Responsive */
+        @media (max-width: 540px) {
+            .success-card {
+                padding: 36px 24px;
+                border-radius: 20px;
+            }
+
+            .success-title {
+                font-size: 24px;
+            }
+
+            .checkmark-container {
+                width: 72px;
+                height: 72px;
+            }
+
+            .checkmark-circle {
+                width: 72px;
+                height: 72px;
+            }
+
+            .checkmark-circle svg {
+                width: 32px;
+                height: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-gradient"></div>
+
+    <nav>
+        <a href="index.html" class="logo">
+            <img src="assets/logo.png" alt="" onerror="this.style.display='none'">
+            <span>UnlockMDM</span>
+        </a>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="success-card">
+                <!-- Loading State -->
+                <div class="loading-state" id="loadingState">
+                    <div class="loading-spinner"></div>
+                    <p class="loading-text">Completing your registration...</p>
+                </div>
+
+                <!-- Success State -->
+                <div id="successState" style="display: none;">
+                    <div class="checkmark-container">
+                        <div class="checkmark-circle">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <h1 class="success-title">Payment Successful</h1>
+                    <p class="success-subtitle">Your device has been activated and registered</p>
+
+                    <div class="order-info">
+                        <div class="order-row">
+                            <div class="order-icon">
+                                <svg viewBox="0 0 24 24" stroke-width="1.5">
+                                    <rect x="5" y="2" width="14" height="20" rx="3"/>
+                                    <circle cx="12" cy="18" r="1"/>
+                                </svg>
+                            </div>
+                            <div class="order-details">
+                                <div class="order-product" id="productName">iOS MDM Bypass</div>
+                                <div class="order-serial" id="serialDisplay">—</div>
+                            </div>
+                            <div class="order-price" id="priceDisplay">$10</div>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="steps-title">What's Next</div>
+                    <div class="steps-list">
+                        <div class="step">
+                            <div class="step-num">1</div>
+                            <div class="step-text">Return to <strong>UnlockMDM</strong> on your Mac</div>
+                        </div>
+                        <div class="step">
+                            <div class="step-num">2</div>
+                            <div class="step-text">Click <strong>Remove MDM</strong> to bypass</div>
+                        </div>
+                        <div class="step">
+                            <div class="step-num">3</div>
+                            <div class="step-text">Follow the prompts to complete setup</div>
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <div class="confirmation-badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                <path d="M22 4L12 14.01l-3-3"/>
+                            </svg>
+                            Registration confirmed
+                        </div>
+                        <div class="order-id" id="orderId"></div>
+                    </div>
+                </div>
+
+                <!-- Error State -->
+                <div class="error-state" id="errorState">
+                    <div class="error-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M15 9l-6 6M9 9l6 6"/>
+                        </svg>
+                    </div>
+                    <h1 class="error-title">Something went wrong</h1>
+                    <p class="error-message" id="errorMessage">We couldn't verify your payment.</p>
+                    <a href="register.html" class="retry-btn">
+                        Try Again
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const SUPABASE_URL = 'https://afeygtsaibzgpiwdwvlz.supabase.co';
+        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFmZXlndHNhaWJ6Z3Bpd2R3dmx6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjY3ODc2NDIsImV4cCI6MjA4MjM2MzY0Mn0.lVHFp0izYkQAl_aCqqBRYTgGuM4EzziajzLKeo9FkY0';
+
+        function getParam(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+        
+        const sessionId = getParam('session_id');
+        const serialFromUrl = getParam('serial')?.trim();
+        const deviceType = getParam('type') || 'ios';
+        const nameFromUrl = getParam('name') || '';
+        const emailFromUrl = getParam('email') || '';
+        const forceRegister = getParam('force') === 'true';
+
+        window.addEventListener('DOMContentLoaded', async () => {
+            console.log('=== SUCCESS PAGE LOADED ===');
+            console.log('Serial:', serialFromUrl);
+            
+            if (!serialFromUrl) {
+                showError('Missing serial number. Please try again.');
+                return;
+            }
+
+            try {
+                const serial = serialFromUrl.toUpperCase();
+                
+                // Check if already registered
+                const checkResponse = await fetch(
+                    `${SUPABASE_URL}/rest/v1/registered_devices?serial=eq.${serial}`,
+                    {
+                        headers: {
+                            'apikey': SUPABASE_ANON_KEY,
+                            'Authorization': `Bearer ${SUPABASE_ANON_KEY}`
+                        }
+                    }
+                );
+                
+                const existing = await checkResponse.json();
+                
+                if (existing && existing.length > 0) {
+                    console.log('Device already registered');
+                    showSuccess({
+                        serial: serial,
+                        device_type: existing[0].device_type || deviceType,
+                        payment_id: sessionId || 'N/A'
+                    });
+                } else {
+                    // Insert new registration
+                    console.log('Registering device:', serial);
+                    
+                    const insertResponse = await fetch(
+                        `${SUPABASE_URL}/rest/v1/registered_devices`,
+                        {
+                            method: 'POST',
+                            headers: {
+                                'apikey': SUPABASE_ANON_KEY,
+                                'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+                                'Content-Type': 'application/json',
+                                'Prefer': 'return=representation'
+                            },
+                            body: JSON.stringify({
+                                serial: serial,
+                                name: nameFromUrl || 'Customer',
+                                email: emailFromUrl || 'paid@stripe.com',
+                                status: 'approved'
+                            })
+                        }
+                    );
+                    
+                    if (insertResponse.ok) {
+                        console.log('Device registered successfully');
+                    } else {
+                        console.error('Registration failed:', await insertResponse.text());
+                    }
+                    
+                    showSuccess({
+                        serial: serial,
+                        device_type: deviceType,
+                        payment_id: sessionId || 'N/A'
+                    });
+                }
+                
+            } catch (error) {
+                console.error('Error:', error);
+                showSuccess({
+                    serial: serialFromUrl?.toUpperCase() || 'N/A',
+                    device_type: deviceType,
+                    payment_id: sessionId || 'N/A'
+                });
+            }
+        });
+
+        function showSuccess(device) {
+            document.getElementById('loadingState').style.display = 'none';
+            document.getElementById('successState').style.display = 'block';
+            
+            if (device.serial) {
+                document.getElementById('serialDisplay').textContent = device.serial;
+            }
+            
+            if (device.payment_id && device.payment_id !== 'N/A') {
+                const shortId = device.payment_id.slice(-8).toUpperCase();
+                document.getElementById('orderId').textContent = `Order #${shortId}`;
+            }
+            
+            const isMac = device.device_type === 'mac';
+            document.getElementById('productName').textContent = isMac ? 'Mac MDM Bypass' : 'iOS MDM Bypass';
+            document.getElementById('priceDisplay').textContent = isMac ? '$25' : '$10';
+        }
+
+        function showError(message) {
+            document.getElementById('loadingState').style.display = 'none';
+            document.getElementById('errorState').style.display = 'block';
+            document.getElementById('errorMessage').textContent = message;
+        }
+    </script>
+</body>
+</html>

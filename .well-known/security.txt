@@ -1,0 +1,6 @@
+# UnlockMDM Security Contact
+Contact: mailto:support@unlockmdm.com
+Expires: 2027-12-31T23:59:59.000Z
+Preferred-Languages: en
+Canonical: https://unlockmdm.com/.well-known/security.txt
+

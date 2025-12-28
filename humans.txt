@@ -1,0 +1,19 @@
+/* TEAM */
+Company: UnlockMDM
+Website: https://unlockmdm.com
+Contact: support@unlockmdm.com
+Location: United States
+
+/* SITE */
+Last update: 2026/01/01
+Standards: HTML5, CSS3, JavaScript
+Software: Custom MDM Bypass Tool
+Components: Supabase, Web3Forms
+
+/* SERVICES */
+- iPhone MDM Bypass
+- iPad MDM Bypass  
+- Mac MDM Bypass
+- Remote Management Removal
+- Device Management Bypass
+

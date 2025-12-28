@@ -1,0 +1,30 @@
+{
+    "name": "UnlockMDM - MDM Bypass Tool",
+    "short_name": "UnlockMDM",
+    "description": "Remove MDM lock and Remote Management from iPhone, iPad & Mac instantly. Professional MDM bypass service.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#007AFF",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "assets/logo.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "assets/logo.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": ["utilities", "productivity"],
+    "lang": "en",
+    "dir": "ltr",
+    "scope": "/",
+    "prefer_related_applications": false
+}
+
