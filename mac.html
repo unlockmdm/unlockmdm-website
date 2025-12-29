@@ -792,7 +792,7 @@
                         <span class="price-preview-note" data-i18n="maintenance.oneTime">One-time</span>
                     </div>
 
-                    <button class="notify-btn" onclick="alert('Thank you! We will notify you when Mac bypass is available.')">
+                    <button class="notify-btn" onclick="promptEmail()">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/>
                             <path d="M13.73 21a2 2 0 01-3.46 0"/>
@@ -956,6 +956,15 @@
     </footer>
 
     <script>
+        function promptEmail() {
+            const email = prompt('Enter your email to be notified when Mac bypass is available:');
+            if (email && email.includes('@')) {
+                alert('Thank you! We will notify you at ' + email + ' when Mac bypass becomes available.');
+            } else if (email) {
+                alert('Please enter a valid email address.');
+            }
+        }
+
         if (history.scrollRestoration) {
             history.scrollRestoration = 'manual';
         }
