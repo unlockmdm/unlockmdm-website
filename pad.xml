@@ -6,63 +6,76 @@
         <MASTER_PAD_INFO>Portable Application Description</MASTER_PAD_INFO>
     </MASTER_PAD_VERSION_INFO>
     
-    <Company_Info>
-        <Company_Name>UnlockMDM</Company_Name>
-        <Address_1>Toronto, ON</Address_1>
-        <City_Town>Toronto</City_Town>
-        <State_Province>Ontario</State_Province>
-        <Zip_Postal_Code>M5V</Zip_Postal_Code>
-        <Country>Canada</Country>
-        <Company_WebSite_URL>https://unlockmdm.com</Company_WebSite_URL>
-        <Contact_First_Name>Support</Contact_First_Name>
-        <Contact_Last_Name>Team</Contact_Last_Name>
-        <Contact_Email>support@unlockmdm.com</Contact_Email>
-        <Support_Email>support@unlockmdm.com</Support_Email>
-        <General_Email>support@unlockmdm.com</General_Email>
-        <Sales_Email>support@unlockmdm.com</Sales_Email>
-    </Company_Info>
+    <COMPANY_INFO>
+        <COMPANY_NAME>UnlockMDM</COMPANY_NAME>
+        <ADDRESS_1>Toronto, ON</ADDRESS_1>
+        <ADDRESS_2></ADDRESS_2>
+        <CITY_TOWN>Toronto</CITY_TOWN>
+        <STATE_PROVINCE>Ontario</STATE_PROVINCE>
+        <ZIP_POSTAL_CODE>M5V</ZIP_POSTAL_CODE>
+        <COUNTRY>Canada</COUNTRY>
+        <COMPANY_WEBSITE_URL>https://unlockmdm.com</COMPANY_WEBSITE_URL>
+        <CONTACT_INFO>
+            <AUTHOR_FIRST_NAME>Support</AUTHOR_FIRST_NAME>
+            <AUTHOR_LAST_NAME>Team</AUTHOR_LAST_NAME>
+            <AUTHOR_EMAIL>support@unlockmdm.com</AUTHOR_EMAIL>
+            <CONTACT_FIRST_NAME>Support</CONTACT_FIRST_NAME>
+            <CONTACT_LAST_NAME>Team</CONTACT_LAST_NAME>
+            <CONTACT_EMAIL>support@unlockmdm.com</CONTACT_EMAIL>
+        </CONTACT_INFO>
+        <SUPPORT_INFO>
+            <SALES_EMAIL>support@unlockmdm.com</SALES_EMAIL>
+            <SUPPORT_EMAIL>support@unlockmdm.com</SUPPORT_EMAIL>
+            <GENERAL_EMAIL>support@unlockmdm.com</GENERAL_EMAIL>
+            <SALES_PHONE></SALES_PHONE>
+            <SUPPORT_PHONE></SUPPORT_PHONE>
+            <GENERAL_PHONE></GENERAL_PHONE>
+            <FAX_PHONE></FAX_PHONE>
+        </SUPPORT_INFO>
+    </COMPANY_INFO>
     
-    <Program_Info>
-        <Program_Name>MDM Removal Tool</Program_Name>
-        <Program_Version>1.0</Program_Version>
-        <Program_Release_Month>12</Program_Release_Month>
-        <Program_Release_Day>28</Program_Release_Day>
-        <Program_Release_Year>2025</Program_Release_Year>
-        <Program_Cost_Dollars>10.00</Program_Cost_Dollars>
-        <Program_Cost_Other_Code>USD</Program_Cost_Other_Code>
-        <Program_Type>Shareware</Program_Type>
-        <Program_Release_Status>New Release</Program_Release_Status>
-        <Program_Install_Support>No Install Support</Program_Install_Support>
-        <Program_OS_Support>macOS</Program_OS_Support>
-        <Program_Language>English</Program_Language>
-        <Program_Change_Info>Initial release</Program_Change_Info>
-        <Program_Specific_Category>Utilities</Program_Specific_Category>
-        <Program_Category_Class>System Utilities::Other</Program_Category_Class>
-        <Program_System_Requirements>macOS 10.15 or later, USB cable, iPhone/iPad/Mac device</Program_System_Requirements>
-        <File_Info>
-            <File_Size_Bytes>11286827</File_Size_Bytes>
-            <File_Size_K>11022</File_Size_K>
-            <File_Size_MB>10.76</File_Size_MB>
-        </File_Info>
-        <Expire_Info>
-            <Has_Expire_Info>N</Has_Expire_Info>
-            <Expire_Count />
-            <Expire_Based_On />
-            <Expire_Other_Info />
-            <Expire_Month />
-            <Expire_Day />
-            <Expire_Year />
-        </Expire_Info>
-    </Program_Info>
+    <PROGRAM_INFO>
+        <PROGRAM_NAME>MDM Removal Tool</PROGRAM_NAME>
+        <PROGRAM_VERSION>1.0</PROGRAM_VERSION>
+        <PROGRAM_RELEASE_MONTH>12</PROGRAM_RELEASE_MONTH>
+        <PROGRAM_RELEASE_DAY>28</PROGRAM_RELEASE_DAY>
+        <PROGRAM_RELEASE_YEAR>2025</PROGRAM_RELEASE_YEAR>
+        <PROGRAM_COST_DOLLARS>10.00</PROGRAM_COST_DOLLARS>
+        <PROGRAM_COST_OTHER_CODE>USD</PROGRAM_COST_OTHER_CODE>
+        <PROGRAM_COST_OTHER></PROGRAM_COST_OTHER>
+        <PROGRAM_TYPE>Shareware</PROGRAM_TYPE>
+        <PROGRAM_RELEASE_STATUS>New Release</PROGRAM_RELEASE_STATUS>
+        <PROGRAM_INSTALL_SUPPORT>No Install Support</PROGRAM_INSTALL_SUPPORT>
+        <PROGRAM_OS_SUPPORT>macOS</PROGRAM_OS_SUPPORT>
+        <PROGRAM_LANGUAGE>English</PROGRAM_LANGUAGE>
+        <PROGRAM_CHANGE_INFO>Initial release</PROGRAM_CHANGE_INFO>
+        <PROGRAM_SPECIFIC_CATEGORY>Utilities</PROGRAM_SPECIFIC_CATEGORY>
+        <PROGRAM_CATEGORY_CLASS>System Utilities::Other</PROGRAM_CATEGORY_CLASS>
+        <PROGRAM_SYSTEM_REQUIREMENTS>macOS 10.15 or later</PROGRAM_SYSTEM_REQUIREMENTS>
+        <FILE_INFO>
+            <FILE_SIZE_BYTES>11286827</FILE_SIZE_BYTES>
+            <FILE_SIZE_K>11022</FILE_SIZE_K>
+            <FILE_SIZE_MB>10.76</FILE_SIZE_MB>
+        </FILE_INFO>
+        <EXPIRE_INFO>
+            <HAS_EXPIRE_INFO>N</HAS_EXPIRE_INFO>
+            <EXPIRE_COUNT></EXPIRE_COUNT>
+            <EXPIRE_BASED_ON></EXPIRE_BASED_ON>
+            <EXPIRE_OTHER_INFO></EXPIRE_OTHER_INFO>
+            <EXPIRE_MONTH></EXPIRE_MONTH>
+            <EXPIRE_DAY></EXPIRE_DAY>
+            <EXPIRE_YEAR></EXPIRE_YEAR>
+        </EXPIRE_INFO>
+    </PROGRAM_INFO>
     
-    <Program_Descriptions>
-        <English>
-            <Keywords>MDM removal, MDM bypass, Remote Management removal, iPhone MDM bypass, iPad MDM bypass, Mac MDM bypass, remove MDM, MDM unlock, device management removal</Keywords>
-            <Char_Desc_45>Remove MDM locks from iPhone, iPad, and Mac</Char_Desc_45>
-            <Char_Desc_80>Remove MDM and Remote Management profiles from iPhone, iPad, and Mac instantly.</Char_Desc_80>
-            <Char_Desc_250>MDM Removal Tool removes Mobile Device Management and Remote Management enrollment screens from Apple devices. One-click solution for iPhones, iPads, and Macs stuck on Remote Management screen. Works on iOS 12-26 and macOS 10-26. No jailbreak required.</Char_Desc_250>
-            <Char_Desc_450>MDM Removal Tool is a powerful desktop application that removes MDM enrollment screens and Remote Management profiles from iPhone, iPad, and Mac devices. Perfect for personally-owned devices stuck on Remote Management screen or devices purchased secondhand with leftover MDM profiles. Features one-click MDM removal, supports all iPhone/iPad/Mac models, iOS 12-26 and macOS 10-26 compatible, no jailbreak required, lifetime license with free re-bypass.</Char_Desc_450>
-            <Char_Desc_2000>MDM Removal Tool is a comprehensive desktop application designed to remove Mobile Device Management (MDM) and Remote Management profiles from Apple devices including iPhone, iPad, and Mac computers.
+    <PROGRAM_DESCRIPTIONS>
+        <ENGLISH>
+            <KEYWORDS>MDM removal, MDM bypass, Remote Management removal, iPhone MDM bypass, iPad MDM bypass, Mac MDM bypass, remove MDM, MDM unlock</KEYWORDS>
+            <CHAR_DESC_45>Remove MDM locks from iPhone, iPad, Mac</CHAR_DESC_45>
+            <CHAR_DESC_80>Remove MDM and Remote Management profiles from iPhone, iPad, and Mac instantly.</CHAR_DESC_80>
+            <CHAR_DESC_250>MDM Removal Tool removes Mobile Device Management and Remote Management enrollment screens from Apple devices. One-click solution for iPhones, iPads, and Macs stuck on Remote Management screen. Works on iOS 12-26 and macOS 10-26. No jailbreak required.</CHAR_DESC_250>
+            <CHAR_DESC_450>MDM Removal Tool is a powerful desktop application that removes MDM enrollment screens and Remote Management profiles from iPhone, iPad, and Mac devices. Perfect for personally-owned devices stuck on Remote Management screen or devices purchased secondhand with leftover MDM profiles. Features one-click MDM removal, supports all iPhone/iPad/Mac models, iOS 12-26 and macOS 10-26 compatible, no jailbreak required, lifetime license with free re-bypass.</CHAR_DESC_450>
+            <CHAR_DESC_2000>MDM Removal Tool is a comprehensive desktop application designed to remove Mobile Device Management (MDM) and Remote Management profiles from Apple devices including iPhone, iPad, and Mac computers.
 
 Key Features:
 - One-click MDM removal process
@@ -75,31 +88,25 @@ Key Features:
 - Lifetime license included
 - Free re-bypass after device restore
 
-The software is perfect for:
-- Personally-owned devices stuck on Remote Management enrollment screen
-- Secondhand devices with leftover enterprise MDM profiles
-- Users locked out by old company or school policies
+Simply download the tool, connect your Apple device via USB, register your device serial number, and click Remove MDM. Your device will restart without the Remote Management lock.
 
-Simply download the tool, connect your Apple device via USB, register your device serial number, and click Remove MDM. Your device will restart without the Remote Management lock, allowing you to set it up fresh with your own Apple ID.
-
-Pricing: $10 for iPhone/iPad, $25 for Mac. One-time payment with lifetime access and free re-bypass support.</Char_Desc_2000>
-        </English>
-    </Program_Descriptions>
+Pricing: $10 for iPhone/iPad, $25 for Mac. One-time payment with lifetime access.</CHAR_DESC_2000>
+        </ENGLISH>
+    </PROGRAM_DESCRIPTIONS>
     
-    <Web_Info>
-        <Application_URLs>
-            <Application_Info_URL>https://unlockmdm.com</Application_Info_URL>
-            <Application_Order_URL>https://unlockmdm.com/register.html</Application_Order_URL>
-            <Application_Screenshot_URL>https://unlockmdm.com/assets/Setup%202.png</Application_Screenshot_URL>
-            <Application_Icon_URL>https://unlockmdm.com/assets/logo.png</Application_Icon_URL>
-            <Application_XML_File_URL>https://unlockmdm.com/pad.xml</Application_XML_File_URL>
-        </Application_URLs>
-        <Download_URLs>
-            <Primary_Download_URL>https://unlockmdm.com/assets/MDMRemovalTool.dmg</Primary_Download_URL>
-            <Secondary_Download_URL>https://unlockmdm.com/assets/MDMRemovalTool.dmg</Secondary_Download_URL>
-            <Additional_Download_URL_1 />
-            <Additional_Download_URL_2 />
-        </Download_URLs>
-    </Web_Info>
+    <WEB_INFO>
+        <APPLICATION_URLS>
+            <APPLICATION_INFO_URL>https://unlockmdm.com</APPLICATION_INFO_URL>
+            <APPLICATION_ORDER_URL>https://unlockmdm.com/register.html</APPLICATION_ORDER_URL>
+            <APPLICATION_SCREENSHOT_URL>https://unlockmdm.com/assets/Setup%202.png</APPLICATION_SCREENSHOT_URL>
+            <APPLICATION_ICON_URL>https://unlockmdm.com/assets/logo.png</APPLICATION_ICON_URL>
+            <APPLICATION_XML_FILE_URL>https://unlockmdm.com/pad.xml</APPLICATION_XML_FILE_URL>
+        </APPLICATION_URLS>
+        <DOWNLOAD_URLS>
+            <PRIMARY_DOWNLOAD_URL>https://unlockmdm.com/assets/MDMRemovalTool.dmg</PRIMARY_DOWNLOAD_URL>
+            <SECONDARY_DOWNLOAD_URL>https://unlockmdm.com/assets/MDMRemovalTool.dmg</SECONDARY_DOWNLOAD_URL>
+            <ADDITIONAL_DOWNLOAD_URL_1></ADDITIONAL_DOWNLOAD_URL_1>
+            <ADDITIONAL_DOWNLOAD_URL_2></ADDITIONAL_DOWNLOAD_URL_2>
+        </DOWNLOAD_URLS>
+    </WEB_INFO>
 </XML_DIZ_INFO>
-
